@@ -1,0 +1,64 @@
+@import './root.css';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    background-color: var(--accentColor2);
+    box-shadow: 0 0 5px 0 black;
+    height: 30%;
+    top: 0;
+    margin: 0;
+    font-size: 15px;
+    color: var(--secondaryColor);
+    font-size: 19px;
+}
+
+#contact_section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-right: 0;
+}
+
+#footer_heading {
+    margin: 2px;
+}
+
+#footer_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+}
+
+#footer_logo {
+    width: 13%;
+}
+
+#footer_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-left: 15%;
+}
+
+#footer_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#footer_menu button {
+    border: none;
+    background-color: var(--primaryButtonColor);
+    color: var(--secondaryColor);
+    font-size: 19px;
+}
+
+#footer_menu button:hover{
+    filter: brightness(var(--primaryButtonColorHoverBrightness));
+}
