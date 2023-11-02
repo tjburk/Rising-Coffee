@@ -2,12 +2,12 @@
 <link rel="stylesheet" href="{% static 'style/headerStyle.css' %}">
 
 <div class="header">
-    <div id="home_button">
+    <!-- <div id="home_button">
         <a href="{% url 'home' %}">
             <button type="submit">Home</button>
         </a>
-    </div>
+    </div> -->
     <div id="header_center">
-        <p>See you at Coffee Fest 2023! Read our latest blog post.</p>
+        <p>See you at Coffee Fest 2023! Read our latest <u><a onClick="document.getElementById('blog').scrollIntoView();">blog post</a></u>.</p>
     </div>
 </div>

@@ -2,7 +2,7 @@
 
 .header {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     color: black;
     background-color: var(--accentColor2);
@@ -14,7 +14,7 @@
     color: var(--secondaryColor);
 }
 
-#home_button {
+/* #home_button {
     display: block;
     margin-left: 2%;
 }
@@ -31,9 +31,9 @@
 
 #home_button button:hover{
     filter: brightness(var(--primaryButtonColorHoverBrightness));
-}
+} */
 
 #header_center {
-    margin-left: 26%;
+    
 }
 

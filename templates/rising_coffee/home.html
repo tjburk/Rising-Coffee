@@ -5,13 +5,14 @@
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
         <link rel="stylesheet" href="{% static 'style/homeStyle.css' %}">
+        <link rel="icon" type="image/x-icon" href="{% static 'images/Logo-Small.png' %}">
     </head>
     <body>
         {% include 'rising_coffee/header.html' %}
         <div class="center">
             <!-- Logo and motto container -->
             <div class="container" id="logo_container">
-                <img id="coffee_logo" src="{% static 'images/coffee_logo.jpg' %}" alt="logo">
+                <img id="coffee_logo" src="{% static 'images/Logo-Large.jpg' %}" alt="logo">
                 <p id="slogan">Elevate your day.</p>
             </div>
 
@@ -20,7 +21,7 @@
                 <button id="about_btn" onClick="document.getElementById('about').scrollIntoView();">About</button>
                 <button id="blog_btn" onClick="document.getElementById('blog').scrollIntoView();">Blog</button>
                 <button id="philosophy_btn" onClick="document.getElementById('philosophy').scrollIntoView();">Philosophy</button>
-                <button id="contact_btn" onClick="window.scrollTo(0, document.body.scrollHeight);">Contact</button>
+                <button id="contact_btn" onClick="document.getElementById('contact').scrollIntoView();">Contact</button>
             </div>
 
             <!-- Slideshow container -->
@@ -28,21 +29,28 @@
         
                 <!-- Full-width images with number and caption text -->
                 <div class="image_carousel fade">
-                    <div class="slide_count">1 / 3</div>
-                    <img src="{% static 'images/coffee_logo.jpg' %}">
-                    <div class="caption_text">Caption Text</div>
+                    <div class="slide_count">1 / 5</div>
+                    <img src="{% static 'images/Carousel-01.jpg' %}">
                 </div>
             
                 <div class="image_carousel fade">
-                    <div class="slide_count">2 / 3</div>
-                    <img src="{% static 'images/coffee_logo.jpg' %}">
-                    <div class="caption_text">Caption Two</div>
+                    <div class="slide_count">2 / 5</div>
+                    <img src="{% static 'images/Carousel-02.jpg' %}">
                 </div>
             
                 <div class="image_carousel fade">
-                    <div class="slide_count">3 / 3</div>
-                    <img src="{% static 'images/coffee_logo.jpg' %}">
-                    <div class="caption_text">Caption Three</div>
+                    <div class="slide_count">3 / 5</div>
+                    <img src="{% static 'images/Carousel-03.jpg' %}">
+                </div>
+
+                <div class="image_carousel fade">
+                    <div class="slide_count">4 / 5</div>
+                    <img src="{% static 'images/Carousel-04.jpg' %}">
+                </div>
+
+                <div class="image_carousel fade">
+                    <div class="slide_count">5 / 5</div>
+                    <img src="{% static 'images/Carousel-05.jpg' %}">
                 </div>
             
                 <!-- Next and previous buttons -->
@@ -56,6 +64,8 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
             </div>
 
             <!-- About container -->
@@ -64,8 +74,14 @@
                 <h1>About</h1>
                 <hr>
                 <div class="info_section">
-                    <span class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</span>
-                    <img class="info_image" src="{% static 'images/coffee_logo.jpg' %}">
+                    <span class="info_text">Rising Coffee LLC started with a passion for family, faith, and 
+                        service. Adam and Althea Rising (a father-daughter duo) partnered to build a family 
+                        business that focuses on serving others and building community through the love of 
+                        coffee. Their shared sense of adventure and love for diverse cultures and experiences 
+                        inspired a journey in coffee that began while living in Italy and traveling the world. 
+                        The business is only just starting, but the vision to serve people from all stations 
+                        and walks of life with the uniting flavor of coffee endures.  </span>
+                    <img class="info_image" src="{% static 'images/About.jpg' %}">
                 </div>
             </div>
 
@@ -75,8 +91,18 @@
                 <h1>Blog</h1>
                 <hr>
                 <div class="info_section">
-                    <img class="info_image" src="{% static 'images/coffee_logo.jpg' %}">
-                    <span class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</span>
+                    <img class="info_image" src="{% static 'images/Blog.jpg' %}">
+                    <span class="info_text">Adam- Alright coffee fans! This is getting real now. 
+                        The Aillio Bullet arrived a few days ago (thanks to my wife and family for 
+                        investing in us!), and the first few seasoning roasts have been done. It is 
+                        a far cry from the stove-top popcorn kettle method that has produced so many 
+                        great, and questionable, roasts over the last two years. The available data is 
+                        overwhelming! I already long for the simplicity of my grill probe stuck in the 
+                        lid and listening for the first and second cracks while recording splits on a 
+                        stopwatch app. That said, I am super excited to up my game and continue the process 
+                        of learning and improving. Our first official foray into the coffee business world, 
+                        will be at Coffee Fest in Orlando, FL, this November. I am super excited to build new 
+                        friendships and partners as we jump in with both feet!!</span>
                 </div>
             </div>
 
@@ -86,8 +112,32 @@
                 <h1>Philosophy</h1>
                 <hr>
                 <div class="info_section">
-                    <span class="info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</span>
-                    <img class="info_image" src="{% static 'images/coffee_logo.jpg' %}">
+                    <span class="info_text">We all have individual values and philosophies in life. In our 
+                        complicated and often fast-paced lives, it is important that we are upfront with who 
+                        we are and why we do things. For Rising Coffee, coffee is the product, service is the 
+                        experience, and our values and faith drive our commitment to you. We believe every 
+                        person is uniquely made in the image of God, and for us, that means all people deserve 
+                        to be treated with dignity and respect. </span>
+                    <img class="info_image" src="{% static 'images/Philosophy.jpg' %}">
+                </div>
+            </div>
+
+            <!-- Contact container -->
+            <div class="info_container" id="contact">
+                <hr>
+                <h1>Sepcial Thanks</h1>
+                <hr>
+                <div class="info_section">
+                    <img class="info_image" src="{% static 'images/Contact.jpg' %}">
+                    <span class="info_text">These are the folks that have helped or are helping us along the way. 
+                        Nothing great happens alone, and we thank you for sharing your passion and experience 
+                        with us!<br><br>
+                        <ul>
+                            <li><strong>Rob Page</strong> – Friendship and Mentorship (Bisbee Coffee Company, bisbeecoffee.com)<br></li>
+                            <li><strong>Tyler Burkhardt</strong> – Web page build and management<br></li>
+                            <li><strong>Justin Zaun</strong> – Web page design and consultation<br></li>
+                            <li><strong>Alina</strong> – Logo art</span></li>
+                        </ul>
                 </div>
             </div>
         </div>
