@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--_rjbc-%%qq3brxniq%=83oah(4rd(p6fl33i2*4y=#7_5k8=n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rising-coffee-bbd556c964d4.herokuapp.com', 'rising.coffee']
+ALLOWED_HOSTS = ['rising-coffee-bbd556c964d4.herokuapp.com', 'rising.coffee', 'localhost']
 
 
 # Application definition
@@ -127,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'rising_coffee/static')
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
