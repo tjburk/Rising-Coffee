@@ -1,0 +1,17 @@
+:root {
+    /* Color pallete */
+    --primaryColor: #6B4C35;
+    --secondaryColor: #F5E7DC;
+    --accentColor1: #9D7A69;
+    --accentColor2: #394032;
+    --highlightColor: #DAA520;
+    --textColor: #433E3E;
+    --primaryButtonColor: var(--accentColor2);
+    --primaryButtonColorHoverBrightness: 120%;   /* brighten color by 20% */
+    --secondaryButtonColor: var(--secondaryColor);
+    --secondaryButtonColorHoverBrightness: 80%;   /* darken color by 20% */
+
+    /* Font pallete */
+    --primaryFont: "Playfair Display";
+    --secondaryFont: "Lato";
+}

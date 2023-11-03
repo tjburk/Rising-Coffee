@@ -1,0 +1,39 @@
+@import './root.css';
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: var(--accentColor2);
+    box-shadow: 0 0 5px 0 black;
+    height: 7vh;
+    top: 0;
+    margin: 0;
+    font-size: 19px;
+    color: var(--secondaryColor);
+}
+
+/* #home_button {
+    display: block;
+    margin-left: 2%;
+}
+
+#home_button button{
+    text-align: center;
+    height: 38px;
+    padding: 5px;
+    background-color: var(--primaryButtonColor);
+    border: none;
+    color: var(--secondaryColor);
+    font-size: 19;
+}
+
+#home_button button:hover{
+    filter: brightness(var(--primaryButtonColorHoverBrightness));
+} */
+
+#header_center {
+    
+}
+
