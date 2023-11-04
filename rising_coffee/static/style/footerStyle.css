@@ -3,15 +3,12 @@
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    color: white;
     background-color: var(--accentColor2);
     box-shadow: 0 0 5px 0 black;
-    height: 30vh;
-    top: 0;
+    height: auto;
     margin: 0;
-    font-size: 15px;
     color: var(--secondaryColor);
     font-size: 19px;
 }
@@ -21,6 +18,8 @@
     flex-direction: column;
     margin-left: 3%;
     margin-right: 0;
+    padding: 0;
+    width: 20%;
 }
 
 #footer_heading {
@@ -32,19 +31,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 4%;
+    margin: 0;
+    margin-top: 2%;
+    padding: 0;
 }
 
 #footer_logo {
-    width: 13%;
+    width: 17%;
 }
 
 #footer_menu {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 6%;
 }
 
 #footer_menu ul {
