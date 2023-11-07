@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--_rjbc-%%qq3brxniq%=83oah(4rd(p6fl33i2*4y=#7_5k8=n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rising-coffee-bbd556c964d4.herokuapp.com', 'rising.coffee', 'localhost']
+ALLOWED_HOSTS = ['rising-coffee-bbd556c964d4.herokuapp.com', 'www.rising.coffee', 'localhost']
 
 
 # Application definition
